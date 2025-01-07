@@ -1,0 +1,173 @@
+{
+	"tldrawFileFormatVersion": 1,
+	"schema": {
+		"schemaVersion": 2,
+		"sequences": {
+			"com.tldraw.store": 4,
+			"com.tldraw.asset": 1,
+			"com.tldraw.camera": 1,
+			"com.tldraw.document": 2,
+			"com.tldraw.instance": 25,
+			"com.tldraw.instance_page_state": 5,
+			"com.tldraw.page": 1,
+			"com.tldraw.instance_presence": 5,
+			"com.tldraw.pointer": 1,
+			"com.tldraw.shape": 4,
+			"com.tldraw.asset.bookmark": 2,
+			"com.tldraw.asset.image": 5,
+			"com.tldraw.asset.video": 5,
+			"com.tldraw.shape.group": 0,
+			"com.tldraw.shape.text": 2,
+			"com.tldraw.shape.bookmark": 2,
+			"com.tldraw.shape.draw": 2,
+			"com.tldraw.shape.geo": 9,
+			"com.tldraw.shape.note": 8,
+			"com.tldraw.shape.line": 5,
+			"com.tldraw.shape.frame": 0,
+			"com.tldraw.shape.arrow": 5,
+			"com.tldraw.shape.highlight": 1,
+			"com.tldraw.shape.embed": 4,
+			"com.tldraw.shape.image": 4,
+			"com.tldraw.shape.video": 2,
+			"com.tldraw.binding.arrow": 0
+		}
+	},
+	"records": [
+		{
+			"gridSize": 10,
+			"name": "",
+			"meta": {},
+			"id": "document:document",
+			"typeName": "document"
+		},
+		{
+			"meta": {},
+			"id": "page:page",
+			"name": "Page 1",
+			"index": "a1",
+			"typeName": "page"
+		},
+		{
+			"x": 372.66668701171875,
+			"y": 7.802082061767578,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:A2RYxBq1afhJHfrH7a7xK",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 390.6666259765625,
+				"text": "Logic Building in Programming",
+				"font": "draw",
+				"textAlign": "start",
+				"autoSize": false,
+				"scale": 1
+			},
+			"parentId": "page:page",
+			"index": "a1",
+			"typeName": "shape"
+		},
+		{
+			"x": 72.66667175292969,
+			"y": 58.30209732055661,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:4cqHSylWo68nOITh1TJnw",
+			"type": "text",
+			"props": {
+				"color": "yellow",
+				"size": "m",
+				"w": 976.0000762939453,
+				"text": "Tips to build the logic in coding :\n1. Ask a question from yourself ? Have you did 50 Questions by yourself ?\nIf, no go and practice now.\nIf, yes then follow the tip now.\n\n1. Get your hands dirty.\nPractice yourself daily on any platforms.\nCode likhkar seekh sakte ho, just likho aur seekho.\nDynamic programming ke 6 types ke problems hote hain.\nBe consistent.\n\n2. Plan your code before development.\nMake your folders and files in the structured way.\n\n3. Divide your code into components.\nMake your codes into smaller , modular reusable content.\nTry to use method | function | DRY Principle.\n\n4. Look at other's code.\nSee other's tutorials to understand the logic behind the code.\nUse rubber duck method.\nTry to teach someone else by assuming ....... Shivika ko hi samjha do.\nUse chaterjii and bannerjii.\nUse for pair programming.\n\n5. Work on real-world projects.\n\n\nNo. of lines of code you have   ♾️  Logic Building Skills.\nwritten in your lifetime.\nSteps to build the logic in programming :)\n(1) Analyse the problem\n(2) Data Flow\n(3) Dry Run Karo\n(4) Use 90-10 Teaching Technique\n(5) Project Banao.\n\n\n\n                                       ❣️Jaao Aur Fod do.❣️",
+				"font": "draw",
+				"textAlign": "start",
+				"autoSize": false,
+				"scale": 1
+			},
+			"parentId": "page:page",
+			"index": "a2C6D",
+			"typeName": "shape"
+		},
+		{
+			"id": "pointer:pointer",
+			"typeName": "pointer",
+			"x": 119.95897998248881,
+			"y": 1280.7935311863419,
+			"lastActivityTimestamp": 1732899490579,
+			"meta": {}
+		},
+		{
+			"followingUserId": null,
+			"opacityForNextShape": 1,
+			"stylesForNextShape": {},
+			"brush": null,
+			"scribbles": [],
+			"cursor": {
+				"type": "default",
+				"rotation": 0
+			},
+			"isFocusMode": false,
+			"exportBackground": true,
+			"isDebugMode": false,
+			"isToolLocked": false,
+			"screenBounds": {
+				"x": 0,
+				"y": 0,
+				"w": 1232,
+				"h": 605.3333740234375
+			},
+			"insets": [
+				false,
+				false,
+				true,
+				false
+			],
+			"zoomBrush": null,
+			"isGridMode": false,
+			"isPenMode": false,
+			"chatMessage": "",
+			"isChatting": false,
+			"highlightedUserIds": [],
+			"isFocused": true,
+			"devicePixelRatio": 1.5,
+			"isCoarsePointer": false,
+			"isHoveringCanvas": true,
+			"openMenus": [],
+			"isChangingStyle": false,
+			"isReadonly": false,
+			"meta": {},
+			"duplicateProps": null,
+			"id": "instance:instance",
+			"currentPageId": "page:page",
+			"typeName": "instance"
+		},
+		{
+			"editingShapeId": "shape:4cqHSylWo68nOITh1TJnw",
+			"croppingShapeId": null,
+			"selectedShapeIds": [
+				"shape:4cqHSylWo68nOITh1TJnw"
+			],
+			"hoveredShapeId": "shape:4cqHSylWo68nOITh1TJnw",
+			"erasingShapeIds": [],
+			"hintingShapeIds": [],
+			"focusedGroupId": null,
+			"meta": {},
+			"id": "instance_page_state:page:page",
+			"pageId": "page:page",
+			"typeName": "instance_page_state"
+		},
+		{
+			"x": 26.598123705459102,
+			"y": -1024.466944799391,
+			"z": 1.123566634501327,
+			"meta": {},
+			"id": "camera:page:page",
+			"typeName": "camera"
+		}
+	]
+}
