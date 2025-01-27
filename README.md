@@ -84,3 +84,8 @@ If you have any queries or suggestions, feel free to reach out to me:
 Special thanks to the **DSA community and online platforms like LeetCode** that made this learning journey exciting and insightful.  
 
 ---
+
+## License  
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
