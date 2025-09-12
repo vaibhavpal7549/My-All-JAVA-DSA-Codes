@@ -12,7 +12,7 @@ public class anagram {
         char[] s2charArray = s2.toCharArray();
 
         // Sort the char arrays
-        Arrays.sort(s1charArray);
+        Arrays.sort(s1charArray); //Will be sorted in lexicographically order
         Arrays.sort(s2charArray);
 
         // Check if both sorted arrays are equal
