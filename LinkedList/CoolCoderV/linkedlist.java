@@ -20,7 +20,7 @@ public class linkedlist {
 
 
     //Methods
-    //these are operatios
+    //these are operations
     // add()
     // remove()
     // print()
@@ -66,6 +66,7 @@ public class linkedlist {
         //base case
         if(head == null){
             head = tail = newNode;
+            return;
         }
         //step2 - newNode next = tail.next
         // newNode.next = tail.next;
@@ -227,17 +228,17 @@ public class linkedlist {
         head = prev;
     }
 
-    public void deleteNthfromEnd(int n){
+    public void deleteNthfromEnd(int n){//O(n)
         //calculate size of linked list
         int sz = 0;
         Node temp = head;
-        while(temp != null){
+        while(temp != null){ //O(n) for both Time & Space
             temp = temp.next;
             sz++;
         }
     
         if(n == sz){
-            head = head.next; //removeFirst
+            head = head.next; // HEAD BAN JAAEGA HEAD KA NEXT //removeFirst
             return;
         }
 
@@ -251,6 +252,7 @@ public class linkedlist {
         }
 
         prev.next = prev.next.next;
+        
     }
 
     //find mid of linked list
@@ -268,7 +270,7 @@ public class linkedlist {
         return slow;
     }
 
-    public boolean checkPalindrome(){
+    public boolean checkPalindrome(){ //O(n)
         if(head == null || head.next == null){
             return true;
         }
@@ -277,7 +279,7 @@ public class linkedlist {
 
         //Step2 - reverse the second half
         Node prev = null;
-        Node curr = midNode.next;
+        Node curr = midNode;
         Node next;
         while(curr != null){
             next = curr.next;
@@ -346,7 +348,7 @@ public class linkedlist {
         slow = head;
         Node prev = null;
         while(slow != fast){
-            prev = fast;
+            prev = fast;     
             slow = slow.next; //1 step
             fast = fast.next; //1 step
         }

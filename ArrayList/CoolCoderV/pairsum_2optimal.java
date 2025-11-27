@@ -3,7 +3,8 @@ import java.util.ArrayList;
 public class pairsum_2optimal {
 
     public static boolean pairSum(ArrayList<Integer> list, int target) {
-
+        //O(n) Time Complexity
+        //For bruteforce approach follow old one solution of the pairsum1
         // breakpoint here
         int n = list.size();
         int bp = -1;
@@ -14,6 +15,8 @@ public class pairsum_2optimal {
 
             }
         }
+
+        //We have to use modulo arithmetic , which helps in the sorted and rotated
         int lp = bp + 1; //smallest
         int rp = bp; //largest
         while(lp != rp){

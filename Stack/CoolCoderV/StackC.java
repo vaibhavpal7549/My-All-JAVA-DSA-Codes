@@ -1,5 +1,6 @@
 
 public class StackC {
+    //head Node
     static class Node{ //node ka class
         //node ka data aur next node ka reference
         int data;
@@ -10,7 +11,7 @@ public class StackC {
         }
     }
     static class Stack {
-        static Node head = null; //head node ka reference
+        static Node head = null; //head node ka reference "Aise mein har koi method access kar sakega" 
         public static boolean isEmpty(){
             return head == null; //agar head null hai to stack empty hai
         }

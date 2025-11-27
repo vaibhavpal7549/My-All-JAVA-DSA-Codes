@@ -3,7 +3,7 @@ import java.util.ArrayList;
 public class pairsum_1optimal {
 
     public static boolean pairSum(ArrayList<Integer> list, int target, int lp, int rp) {
-
+        //arraylist is sorted given, so take benefit of this
         while(lp<rp){
             int sum = list.get(lp)+list.get(rp);
             //case 1
