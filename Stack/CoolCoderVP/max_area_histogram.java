@@ -1,13 +1,13 @@
 import java.util.*;
 //Time Complexity O(n)
 //Space Complexity O(n)
-public class max_area_histogram {
+public class max_area_histogram { //Max Area in Histogram // O(n)
 
     public static void maxArea(int arr[]){
         int maxArea = 0;
         int nsr[] = new int[arr.length];
         int nsl[] = new int[arr.length];
-        //Next Smaller Right
+        //Next Smaller Right = O(N)
         Stack<Integer> s = new Stack<>();
         for(int i = arr.length-1; i>=0; i--){
             while(!s.isEmpty() && arr[s.peek()]>=arr[i]){
@@ -21,7 +21,7 @@ public class max_area_histogram {
             s.push(i);
         }
 
-        //Next Smaller Left
+        //Next Smaller Left = O(N)
 
         s = new Stack<>();
         for(int i = 0; i<arr.length; i++){
