@@ -5,9 +5,9 @@ public class implementation_jcf {
         //declaration of queue
         // Queue<Integer> q = new LinkedList<>(); //object
         Queue<Integer> q = new ArrayDeque<>(); //object
-        q.add(1);
-        q.add(2);
-        q.add(3);
+        q.add(1); //O(1)
+        q.add(2); //O(1)
+        q.add(3); //O(1)
 
         while(!q.isEmpty()){
             System.out.println(q.peek());

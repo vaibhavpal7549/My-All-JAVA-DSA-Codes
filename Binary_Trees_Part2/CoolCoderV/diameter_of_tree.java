@@ -46,7 +46,7 @@ public class diameter_of_tree{
     }
 
 
-    public static Info diameter(Node root){
+    public static Info diameter(Node root){ //Time Complexity : O(n)
         if(root == null){
             return new Info(0, 0);
         }
@@ -71,8 +71,9 @@ public class diameter_of_tree{
         root.left.right = new Node(5);
         root.right.left = new Node(6);
         root.right.right = new Node(7);
-        System.out.println("Diameter of the tree is: "+diameter(root).diam);
-        System.out.println("Height of the tree is: "+diameter(root).ht);
+        System.out.println("Diameter of the tree is: "+diameter1(root)); //Time Complexity : O(n^2)
+        System.out.println("Diameter of the tree is: "+diameter(root).diam); //Time Complexity : O(n)
+        System.out.println("Height of the tree is: "+diameter(root).ht); //Time Complexity : O(n)
 
         
     }

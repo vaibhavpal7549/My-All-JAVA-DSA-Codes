@@ -4,9 +4,9 @@ public class implementation {
 
 
     static class Queue {//static class
-        static int arr[];
-        static int size;
-        static int rear;
+        static int arr[]; //taaki main main bhi use kar saku
+        static int size; //taaki main main bhi use kar saku
+        static int rear; //taaki main main bhi use kar saku
 
 
         Queue(int n){ //Constructor
@@ -54,7 +54,7 @@ public class implementation {
         }
     }
     public static void main(String[] args) {
-        Queue q = new Queue(5); //Object hai
+        Queue q = new Queue(5); //Object hai  5 is the size of the queue, iske andar jo parameters aa rahe hai wo constructor ke parameters hai
         q.add(1);
         q.add(2);
         q.add(3);

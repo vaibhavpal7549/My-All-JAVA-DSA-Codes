@@ -36,7 +36,7 @@ public class pre_order_traversal{
                 preorder(root.right);
             }
 
-            public static void preorder1(Node root){
+            public static void preorder1(Node root){ //O(n)
                 if(root == null){
                     return;
                 }

@@ -1,7 +1,7 @@
 
 public class queue_using_linkedlist {
 
-    static class Node{ //node class
+    static class Node{ //node class, accessible only within queue_using_linkedlist class
         int data;
         Node next;
 
@@ -12,7 +12,7 @@ public class queue_using_linkedlist {
     }
 
 
-    static class Queue {
+    static class Queue { //queue class, accessible only within queue_using_linkedlist class
         static Node head = null;
         static Node tail = null;
     
@@ -24,7 +24,7 @@ public class queue_using_linkedlist {
         //add // O(1)
         public static void add(int data){
             Node newNode = new Node(data);
-            if(head == null){
+            if(head == null){ //first element
                 head = tail = newNode;
                 return;
             }

@@ -1,7 +1,7 @@
 
 
-import java.util.*;
-public class top_view_binary_tree{
+import java.util.*; //Importing necessary packages
+public class top_view_binary_tree{ //Class
 
     static class Node{ //Node class
         int data;
@@ -15,20 +15,20 @@ public class top_view_binary_tree{
         }
     }
 
-    static class Info{
-        Node node;
-        int hd;
-        public Info(Node node, int hd) {
-            this.node = node;
-            this.hd = hd;
+    static class Info{ //Info class to store node and its horizontal distance
+        Node node; //Node
+        int hd; //Horizontal Distance
+        public Info(Node node, int hd) { //Constructor
+            this.node = node; //Node
+            this.hd = hd; //Horizontal Distance
         }
     }
-    public static void topView(Node root){
+    public static void topView(Node root){ //Top View of Binary Tree
         //Level Order
-        Queue<Info> q = new LinkedList<>();
-        HashMap<Integer, Node> map = new HashMap<>();
+        Queue<Info> q = new LinkedList<>(); //Queue to store nodes and their horizontal distance
+        HashMap<Integer, Node> map = new HashMap<>(); //HashMap to store the first node at each horizontal distance
 
-        int min = 0, max = 0;
+        int min = 0, max = 0; //To keep track of minimum and maximum horizontal distance
         q.add(new Info(root, 0)); //root node with hd = 0
         q.add(null);
         while(!q.isEmpty()){
@@ -55,7 +55,7 @@ public class top_view_binary_tree{
             }
         }
         for(int i = min; i<=max ; i++){
-            System.out.println(map.get(i).data);
+            System.out.println(map.get(i).data); //Print the top view nodes
         }
         System.out.println();
     }
@@ -71,7 +71,7 @@ public class top_view_binary_tree{
         root.right.left = new Node(6);
         root.right.right = new Node(7);
 
-        topView(root);
+        topView(root); //Function Call
 
     }
 }
