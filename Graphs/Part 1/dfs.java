@@ -53,6 +53,10 @@ public class dfs {
 
     }
 
+    //recursive DFS function to traverse the graph
+    //O(V + E) time complexity, where V is the number of vertices and E is the number of edges in the graph
+    //why boolean ko parameter pass karna padta hai? because we need to keep track of visited vertices across recursive calls, and we want to avoid creating a new visited array for each call. By passing the same visited array, we can ensure that all recursive calls share the same state of visited vertices, allowing us to correctly traverse the graph without revisiting already visited nodes.
+    
     public static void dfs(ArrayList<edge> graph[], int curr, boolean visited[]) { //O(V + E)
         System.out.print(curr + " "); //print the current vertex
         visited[curr] = true; //mark the current vertex as visited

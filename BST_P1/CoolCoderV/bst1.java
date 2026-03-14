@@ -1,15 +1,18 @@
 public class bst1{
 
-    static class Node{
+    static class Node{ // Node class
         int data;
         Node left;
         Node right;
 
-        Node(int data){
+        Node(int data){ // Constructor
             this.data = data;
         }
     }
 
+    // Insertion in BST
+    // Time Complexity - O(H) where H is the height of the tree
+    //Time complexity for inserting the n elements in the tree is O(n*H) where H is the height of the tree
     public static Node insert(Node root, int val){
         if(root == null){
             root = new Node(val);
@@ -25,11 +28,10 @@ public class bst1{
         return root;
     }
 
+    // Searching in BST
+    // Time Complexity - O(H) where H is the height of the tree
     public static boolean search(Node root, int key){
-        if(root == null){
-
-        return false;
-        }
+        if(root == null) return false;
 
         if(root.data == key) return true;
 
@@ -40,7 +42,11 @@ public class bst1{
         }
     }
 
+    // Deletion in BST
+    // Time Complexity - O(H) where H is the height of the tree
+    // 3 Cases
     public static  Node delete(Node root, int val){
+        if(root == null) return null;
         if(root.data < val){
             root.right = delete(root.right, val);
         }else if(root.data > val){
@@ -68,7 +74,9 @@ public class bst1{
 
         return root;
     }
-
+    // Inorder Traversal
+    //Inorder Traversal of a BST gives us the sorted order of the elements in the tree
+    // Time Complexity - O(N) where N is the number of nodes in the tree
     public static void inorder(Node root){
         if(root == null){
             return;
@@ -76,9 +84,13 @@ public class bst1{
         inorder(root.left);
         System.out.print(root.data + " ");
         inorder(root.right);
+        // Left, Root, Right
 
     }
 
+    // To find the Inorder Successor
+    // Inorder Successor is the smallest element in the right subtree of the node to be deleted
+    // Time Complexity - O(H) where H is the height of the tree
     public static Node findInorderSuccessor(Node root){
         while(root.left != null){
             root = root.left;
