@@ -31,6 +31,7 @@ public class kth_ancestor {
         int max = Math.max(leftDist, rightDist);
         if(max+1 == k){
             System.out.println(root.data);
+        
         }
 
         // return 0000;
