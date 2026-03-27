@@ -27,6 +27,8 @@ public class remove_duplicates {
         StringBuilder newStr = new StringBuilder();
         boolean[] map = new boolean[26];
         removeDuplicates(str, 0, newStr, map);
+        //or
+        // removeDuplicates(str, 0, new StringBuilder(), new boolean[26]);
     }
 
 }

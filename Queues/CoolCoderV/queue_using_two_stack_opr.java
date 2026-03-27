@@ -12,6 +12,7 @@ public class queue_using_two_stack_opr {
 
         //add() O(n)
         public static void add(int data){
+            //three step process
             while(!s1.isEmpty()){
             s2.push(s1.pop());
             }

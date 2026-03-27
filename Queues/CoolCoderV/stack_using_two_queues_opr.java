@@ -26,7 +26,7 @@ public class stack_using_two_queues_opr {
             }
             int top = -1;
 
-            //case1
+            //case1 q1 ke andar saare element hain
             if(!q1.isEmpty()){
                 while(!q1.isEmpty()){
                     top = q1.remove();
@@ -36,7 +36,7 @@ public class stack_using_two_queues_opr {
                     q2.add(top);
                 }
 
-            }else{ //case 2
+            }else{ //case 2 // q2 ke andar saare element hain
                 while(!q2.isEmpty()){
                     top = q2.remove();
                     if(q2.isEmpty()){
@@ -57,14 +57,14 @@ public class stack_using_two_queues_opr {
             }
             int top = -1;
 
-            //case1
+            //case1 //q1 ke andar saare element hain
             if(!q1.isEmpty()){
                 while(!q1.isEmpty()){
                     top = q1.remove();
                     q2.add(top);
                 }
 
-            }else{ //case 2
+            }else{ //case 2 // q2 ke andar saare element hain
                 while(!q2.isEmpty()){
                     top = q2.remove();
                     q1.add(top);

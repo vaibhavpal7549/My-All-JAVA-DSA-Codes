@@ -30,7 +30,7 @@ public class sorted_rotated_array_code {
         else{
             // case c : right
             if((arr[mid] <= target) && (target <= arr[ei])){
-                return search(arr, target, mid, ei); // yahan par mid+1 bhi pass kar sakte hain
+                return search(arr, target, mid+1, ei); // yahan par mid+1 bhi pass kar sakte hain
             } else{
                 // case d : left
                 return search(arr, target, si, mid-1);
