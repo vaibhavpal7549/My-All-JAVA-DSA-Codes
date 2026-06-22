@@ -1,0 +1,7 @@
+Authentication system (Student Portal)
+
+Implement authent Implemented education using express Mongodb and bcrypt
+Post register user Registered any user which hashed password 
+Post a login authenticate user and written a Gwtq token
+Get slash profile protected route to return a user profile data 
+Boost logout invalidate gwt optional can be handled on client side

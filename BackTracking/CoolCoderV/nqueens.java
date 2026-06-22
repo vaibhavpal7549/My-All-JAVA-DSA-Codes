@@ -16,7 +16,6 @@ public class nqueens {
         if(row == board.length){
             printBoard(board);
             return;
-
         }
 
         //column loop
@@ -24,12 +23,8 @@ public class nqueens {
             board[row][j] = 'Q';
             nQueens(board, row+1); //function call for next row
             board[row][j] = 'x'; //backtracking step
-
         }
-
-
     }
-
 
     public static void main(String[] args) {
         int n = 2;
@@ -40,6 +35,5 @@ public class nqueens {
             }
         }
         nQueens(board, 0);
-
     }
 }
