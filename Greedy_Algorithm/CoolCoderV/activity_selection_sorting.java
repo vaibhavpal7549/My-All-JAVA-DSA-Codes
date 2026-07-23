@@ -17,6 +17,7 @@ public class activity_selection_sorting{
         }
         //lambda function used here -> shortform of big function
         Arrays.sort(activities, Comparator.comparingDouble(o -> o[2]));
+        //Sorting Column number 2 ke basis pe karni hai
 
         //end time basis sorted
         int maxAct = 0;
@@ -25,10 +26,10 @@ public class activity_selection_sorting{
         //1st Activity
         maxAct = 1;
         ans.add(activities[0][0]);
-        int lastEnd = end[0];
+        int lastEnd = activities[0][2];
 
-        for(int i=0; i<end.length; i++){
-            if(start[i]>= lastEnd){
+        for(int i=1; i<activities.length; i++){
+            if(activities[i][1]>= lastEnd){
                 //Activity Select
                 maxAct++;
                 ans.add(activities[i][0]);
