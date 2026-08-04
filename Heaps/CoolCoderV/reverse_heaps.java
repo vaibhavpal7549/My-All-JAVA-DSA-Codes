@@ -18,6 +18,7 @@ public class reverse_heaps {
             System.out.println(pq.peek()); //O(1)
             pq.remove(); //O(logn)
         }
+        //output: 7 4 3 1
     }
 }
 

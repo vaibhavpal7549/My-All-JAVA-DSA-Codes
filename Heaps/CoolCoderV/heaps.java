@@ -1,5 +1,6 @@
 
 import java.util.PriorityQueue;
+// Or import java.util.*; // This will import all the classes in the java.util package
 
 public class heaps {
     public static void main(String[] args) {
