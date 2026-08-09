@@ -15,7 +15,7 @@ class tree_imple {
     private Node root = new Node();
 
     // Insert word
-    public void insert(String word) {
+    public void insert(String word) { //O(L) -> L is the length of the word
         Node curr = root;
 
         for (int i = 0; i < word.length(); i++) {
@@ -32,7 +32,7 @@ class tree_imple {
     }
 
     // Search word
-    public boolean search(String word) {
+    public boolean search(String word) { //O(L) -> L is the length of the word
         Node curr = root;
 
         for (int i = 0; i < word.length(); i++) {
