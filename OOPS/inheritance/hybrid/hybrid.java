@@ -1,3 +1,35 @@
+//different different types of inheritance is called hybrid inheritance
+//sab ek hi jagah mil jaae tab hybrid inheritance hota hai
+
+class shape { // defining class //base class or parent class
+
+    String color; // defining property
+
+    public void area() {
+        System.out.println("Displays area of shape");
+    }
+}
+
+class Triangle extends shape { // defining child class inheriting the parent class properties //subclass or child class
+
+    int base;
+    int height;
+
+    public void area() {
+        System.out.println("Displays area of triangle");
+        System.out.println("Area of triangle is: " + 0.5 * base * height);
+    }
+}
+
+class Circle extends shape { // defining child class inheriting the parent class properties //subclass or child class
+
+    int radius;
+
+    public void area() {
+        System.out.println("Displays area of circle");
+        System.out.println("Area of circle is: " + 3.14 * radius * radius);
+    }
+}
 
 public class hybrid {
 
